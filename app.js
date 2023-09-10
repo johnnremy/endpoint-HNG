@@ -15,8 +15,8 @@ app.get('/api', (req, res) => {
   const utcTime = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString();
 
   // Hardcoded GitHub URLs
-  const githubFileUrl = 'https://github.com/username/repo/blob/main/file_name.ext';
-  const githubRepoUrl = 'https://github.com/username/repo';
+  const githubFileUrl = 'https://github.com/remy01gh/endpoint-HNG/blob/main/app.js';
+  const githubRepoUrl = 'https://github.com/remy01gh/endpoint-HNG';
 
   // Prepare the JSON response
   const jsonResponse = {

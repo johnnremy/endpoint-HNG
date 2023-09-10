@@ -12,7 +12,7 @@ app.get('/api', (req, res) => {
 
   // Get the current UTC time (accurate within +/-2 minutes)
   const now = new Date();
-  const utcTime = now.toISOString();
+  const utcTime = now.toISOString().split('.')[0] + 'Z';
 
   // Hardcoded GitHub URLs
   const githubFileUrl = 'https://github.com/remy01gh/endpoint-HNG/blob/main/app.js';
